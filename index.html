@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="main.js"></script>
 </head>
 <body>
-    
-    <script src="main.js"></script>
+    <div id="keyboard"></div>
+
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    };
+
+    html, body {
+
+        height: 100%;
+    }
+    .keyboard__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .keyboard__row {
+        display: flex;
+        margin: 10px 0;
+
+    }
+
+    .keyboard__key {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: grey;
+        border-radius: 4px;
+        margin: 4px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .keyboard__key:hover {
+        background: darkgray;
+    }
+    #keyboard {
+        position: fixed;
+        height: 200px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        background-color: rgba(23, 78, 187, 0.4);
+        }
+</style>
 </body>
 </html>
